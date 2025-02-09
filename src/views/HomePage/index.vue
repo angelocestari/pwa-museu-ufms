@@ -15,6 +15,7 @@
                    text="Começar Apresentação"
                    variant="elevated"
                    class="px-6 py-3 text-white rounded-lg"
+                   @click="goToTela2"
             ></v-btn>
           </v-col>
         </v-row>
@@ -27,13 +28,19 @@
 
 <script setup>
 import {ref} from 'vue';
-import Navbar from "@/HomePage/components/navbar.vue";
-import SobreModal from "@/HomePage/components/sobreModal.vue";
+import {useRouter} from "vue-router";
+import Navbar from "@/views/HomePage/components/navbar.vue";
+import SobreModal from "@/views/HomePage/components/sobreModal.vue";
 
 const showModal = ref(false);
+const router = useRouter();
 
 function openModal() {
   showModal.value = true;
+}
+
+function goToTela2() {
+  router.push("/screen2");
 }
 
 </script>

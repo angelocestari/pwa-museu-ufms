@@ -6,12 +6,12 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import vuetify from "vite-plugin-vuetify";
 
 export default defineConfig({
+    base: '/pwa-museu-ufms/',
     plugins: [
         vue(),
         vueDevTools(),
         vuetify({autoImport: true}),
     ],
-    base: '/pwa-museu-ufms/',
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))

@@ -50,6 +50,27 @@
             mdi-circle
           </v-icon>
         </v-btn>
+        <v-btn icon
+               class="clickable-area-vacuoles"
+               @click="openModal('vacuoles')">
+          <v-icon color="transparent">
+            mdi-circle
+          </v-icon>
+        </v-btn>
+        <v-btn icon
+               class="clickable-area-cytoskeleton1"
+               @click="openModal('cytoskeleton')">
+          <v-icon color="transparent">
+            mdi-circle
+          </v-icon>
+        </v-btn>
+        <v-btn icon
+               class="clickable-area-cytoskeleton2"
+               @click="openModal('cytoskeleton')">
+          <v-icon color="transparent">
+            mdi-circle
+          </v-icon>
+        </v-btn>
       </v-container>
     </v-main>
     <v-btn size="small"
@@ -114,6 +135,21 @@ const organelleData = {
     title: 'Lisossomos: Sistema de reciclagem',
     img: 'src/assets/lisossomo_e_fagossomo.jpg',
     content: 'Os lisossomos são como centro de reciclagem celular, pois contêm enzimas que degradam materiais indesejados ou danificados, reciclando os componentes úteis e eliminando aqueles que não servem mais. Isso ajuda a manter a célula limpa e funcionando corretamente. '
+  },
+  vacuoles: {
+    title: 'Vacúolos: Armazéns da célula',
+    img: 'src/assets/vacuolo.jpg',
+    content: 'Nas células animais, os vacúolos não são tão grandes como nas células vegetais, mas apresentam a mesma função, armazenar substâncias, como por exemplo nutrientes para serem usados no momento oportuno.'
+  },
+  cytoskeleton:{
+    title: 'Citoesqueleto: O esqueleto da célula',
+    img: 'src/assets/citoesqueleto.jpg',
+    content: 'Célula tem esqueleto? Tem sim! Ele é formado por uma rede de fibras que dá suporte e forma à célula.  Além disso, é o citoesqueleto que permite que a célula se mova, mude de forma e que transporta organelas e vesículas de um local para o outro dentro da célula; Imagine o citoesqueleto como uma rede de trilhos, sobre os quais tudo na célula se move de maneira organizada.'
+  },
+  cytoplasmic_membrane: {
+    title: 'Membrana citoplasmática: A fronteira',
+    img: 'src/assets/membrana_celular.jpg',
+    content: 'A membrana citoplasmática é a “pele” da célula, protegendo-a e controlando o que entra e o que sai. Ela é feita de duas camadas de lipídios e proteínas que permitem a comunicação da célula com o ambiente ao seu redor, recebendo sinais e interagindo às mudanças externas.'
   }
 
 }
@@ -213,6 +249,44 @@ function finalizarApresentacao() {
   cursor: pointer;
   top: 43%;
   left: 26%;
+}
+
+.clickable-area-vacuoles {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 0;
+  cursor: pointer;
+  top: 21%;
+  left: 40%;
+}
+
+.clickable-area-cytoskeleton1 {
+  position: absolute;
+  width: 105px;
+  height: 10px;
+  rotate: -56deg;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 0;
+  cursor: pointer;
+  top: 41%;
+  left: 33%;
+}
+
+.clickable-area-cytoskeleton2 {
+  position: absolute;
+  width: 120px;
+  height: 10px;
+  rotate: -93deg;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 0;
+  cursor: pointer;
+  top: 45%;
+  left: 32%;
 }
 
 .finalizar-btn {

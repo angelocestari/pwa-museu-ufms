@@ -4,7 +4,9 @@
       <v-card-title class="text-h5">Sobre esta aplicação</v-card-title>
       <v-card-text>
         Aplicação desenvolvida voluntariamente pelo acadêmico Angelo Henrique Peres Cestari Junior do curso de
-        Engenharia de Computação sob orientação da professora Luciana Montera.
+        Engenharia de Computação sob orientação da
+        professora Luciana Montera e colaboração da professora Ludimila Canuto Faccioni (autoria das imagens e
+        curadoria de conteúdo).
       </v-card-text>
       <v-row>
         <v-col cols="6">

@@ -30,7 +30,7 @@
           <v-col cols="12"
                  md="6"
                  class="d-flex justify-center">
-            <v-img src="src/assets/celula-eucarionte.jpg" max-width="500" contain></v-img>
+            <v-img src="src/assets/celula_eucarionte.jpg" max-width="700" contain></v-img>
           </v-col>
         </v-row>
       </v-container>

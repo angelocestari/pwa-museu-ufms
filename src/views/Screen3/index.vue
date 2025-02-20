@@ -3,7 +3,7 @@
     <top-bar></top-bar>
     <v-main class="d-flex align-center justify-center">
       <v-container class="d-flex align-center justify-center">
-        <v-img src="src/assets/celula-eucarionte.jpg"
+        <v-img src="src/assets/celula_eucarionte.jpg"
                max-width="80%"
                max-height="80vh"
                contain
@@ -26,6 +26,7 @@
     ></v-btn>
     <CellInfoModal v-model="showModal"
                    :title="modalTitle"
+                   :img-path="modalImage"
                    :content="modalText"
     ></CellInfoModal>
   </v-app>
@@ -40,6 +41,7 @@ import CellInfoModal from "@/views/Screen3/components/CellInfoModal.vue";
 const organelleData = {
   nucleus: {
     title: 'Núcleo: O cérebro da célula',
+    img: 'src/assets/nucleo_com_nucleolo.jpg',
     content: 'O núcleo é o centro de controle da célula eucarionte. Ele guarda o DNA e comanda tudo o que acontece dentro da célula. O núcleo é protegido por uma membrana que garante que só moléculas específicas entrem ou saiam, mantendo tudo funcionando da melhor maneira possível. '
   }
 }
@@ -47,11 +49,13 @@ const organelleData = {
 const showModal = ref(false);
 const modalTitle = ref("");
 const modalText = ref("");
+const modalImage = ref("");
 const router = useRouter();
 
 function openModal(organelleId) {
   if (organelleData[organelleId]) {
     modalTitle.value = organelleData[organelleId].title;
+    modalImage.value = organelleData[organelleId].img;
     modalText.value = organelleData[organelleId].content;
     showModal.value = true;
   }

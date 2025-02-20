@@ -9,12 +9,23 @@
             <v-img src="src/assets/logo_museu.png" max-width="400"></v-img>
           </v-col>
         </v-row>
+        <v-row>
+          <v-col cols="12" md="6" class="d-flex justify-start">
+            <v-img src="src/assets/capi_movimento.gif"
+                   max-width="250"
+                   class="rounded-lg"
+                   height="200"
+                   alt="animacao"
+            ></v-img>
+          </v-col>
+        </v-row>
         <v-row class="justify-center text-end mt-8 mr-8">
           <v-col cols="12">
             <v-btn color="#0088B7"
                    text="Começar Apresentação"
                    variant="elevated"
                    class="px-6 py-3 text-white rounded-lg"
+                   @click="goToTela2"
             ></v-btn>
           </v-col>
         </v-row>
@@ -27,13 +38,19 @@
 
 <script setup>
 import {ref} from 'vue';
-import Navbar from "@/HomePage/components/navbar.vue";
-import SobreModal from "@/HomePage/components/sobreModal.vue";
+import {useRouter} from "vue-router";
+import Navbar from "@/views/HomePage/components/navbar.vue";
+import SobreModal from "@/views/HomePage/components/sobreModal.vue";
 
 const showModal = ref(false);
+const router = useRouter();
 
 function openModal() {
   showModal.value = true;
+}
+
+function goToTela2() {
+  router.push("/screen2");
 }
 
 </script>
@@ -48,4 +65,5 @@ function openModal() {
     text-transform: uppercase;
     border-radius: 8px;
   }
+
 </style>

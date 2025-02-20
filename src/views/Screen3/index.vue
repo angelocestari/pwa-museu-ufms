@@ -15,17 +15,25 @@
             mdi-circle
           </v-icon>
         </v-btn>
-        <CellInfoModal v-model="showModal"
-                       :title="modalTitle"
-                       :content="modalText"
-        ></CellInfoModal>
       </v-container>
     </v-main>
+    <v-btn size="small"
+           color="red"
+           text="Finalizar Apresentação"
+           class="finalizar-btn"
+           variant="flat"
+           @click="finalizarApresentacao"
+    ></v-btn>
+    <CellInfoModal v-model="showModal"
+                   :title="modalTitle"
+                   :content="modalText"
+    ></CellInfoModal>
   </v-app>
 </template>
 
 <script setup>
 import {ref} from "vue";
+import {useRouter} from "vue-router";
 import TopBar from "@/views/components/topBar.vue";
 import CellInfoModal from "@/views/Screen3/components/CellInfoModal.vue";
 
@@ -39,6 +47,7 @@ const organelleData = {
 const showModal = ref(false);
 const modalTitle = ref("");
 const modalText = ref("");
+const router = useRouter();
 
 function openModal(organelleId) {
   if (organelleData[organelleId]) {
@@ -46,6 +55,10 @@ function openModal(organelleId) {
     modalText.value = organelleData[organelleId].content;
     showModal.value = true;
   }
+}
+
+function finalizarApresentacao() {
+  router.push("/");
 }
 
 </script>
@@ -67,4 +80,9 @@ function openModal(organelleId) {
   left: 48%;
 }
 
+.finalizar-btn{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
 </style>

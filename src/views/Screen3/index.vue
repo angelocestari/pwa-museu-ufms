@@ -71,8 +71,8 @@ function finalizarApresentacao() {
 
 .clickable-area {
   position: absolute;
-  width: 50px;
-  height: 50px;
+  width: 200px;
+  height: 150px;
   border-radius: 50%;
   background-color: transparent;
   opacity: 0;
@@ -80,8 +80,8 @@ function finalizarApresentacao() {
 }
 
 .nucleus {
-  top: 44%;
-  left: 48%;
+  top: 21%;
+  left: 44%;
 }
 
 .finalizar-btn{

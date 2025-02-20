@@ -11,6 +11,7 @@ export default defineConfig({
         vueDevTools(),
         vuetify({autoImport: true}),
     ],
+    base: '/pwa-museu-ufms/',
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url))

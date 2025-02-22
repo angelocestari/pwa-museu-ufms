@@ -2,7 +2,7 @@
   <v-dialog :model-value="isOpen" max-width="600">
     <v-card class="overflow-y-hidden">
       <v-card-title class="text-h5">Sobre esta aplicação</v-card-title>
-      <v-card-text>
+      <v-card-text class="text-justify">
         Aplicação desenvolvida voluntariamente pelo acadêmico Angelo Henrique Peres Cestari Junior do curso de
         Engenharia de Computação sob orientação da
         professora Luciana Montera e colaboração da professora Ludimila Canuto Faccioni (autoria das imagens e

@@ -22,7 +22,7 @@
         <v-row class="justify-center text-end mt-8 mr-8">
           <v-col cols="12">
             <v-btn color="#0088B7"
-                   text="Começar Apresentação"
+                   text="Iniciar Aventura"
                    variant="elevated"
                    class="px-6 py-3 text-white rounded-lg"
                    @click="goToTela2"

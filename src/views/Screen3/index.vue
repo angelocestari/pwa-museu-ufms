@@ -16,7 +16,14 @@
           </v-icon>
         </v-btn>
         <v-btn icon
-               class="clickable-area-mitochondrias"
+               class="clickable-area-mitochondrias1"
+               @click="openModal('mitochondrias')">
+          <v-icon color="transparent">
+            mdi-circle
+          </v-icon>
+        </v-btn>
+        <v-btn icon
+               class="clickable-area-mitochondrias2"
                @click="openModal('mitochondrias')">
           <v-icon color="transparent">
             mdi-circle
@@ -74,8 +81,8 @@
       </v-container>
     </v-main>
     <v-btn size="small"
-           color="red"
-           text="Finalizar Apresentação"
+           color="#0088B7"
+           text="Finalizar"
            class="finalizar-btn"
            variant="flat"
            @click="finalizarApresentacao"
@@ -185,45 +192,58 @@ function finalizarApresentacao() {
   background-color: transparent;
   opacity: 0;
   cursor: pointer;
-  top: 21%;
-  left: 41%;
+  top: 25%;
+  left: 44%;
 }
 
-.clickable-area-mitochondrias {
+.clickable-area-mitochondrias1 {
   position: absolute;
-  width: 130px;
+  width: 120px;
   height: 50px;
   rotate: -60deg;
   border-radius: 50%;
   background-color: transparent;
   opacity: 0;
   cursor: pointer;
-  top: 58%;
-  left: 60%;
+  top: 56%;
+  left: 59%;
+}
+
+.clickable-area-mitochondrias2 {
+  position: absolute;
+  width: 120px;
+  height: 80px;
+  rotate: -130deg;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 0;
+  cursor: pointer;
+  top: 54%;
+  left: 33%;
 }
 
 .clickable-area-golgi_apparatus {
   position: absolute;
-  width: 160px;
+  width: 150px;
   height: 150px;
   border-radius: 50%;
   background-color: transparent;
   opacity: 0;
   cursor: pointer;
-  top: 28%;
-  left: 63%;
+  top: 31%;
+  left: 62%;
 }
 
 .clickable-area-centrioles {
   position: absolute;
-  width: 60px;
+  width: 70px;
   height: 60px;
   border-radius: 50%;
   background-color: transparent;
   opacity: 0;
   cursor: pointer;
-  top: 28%;
-  left: 32%;
+  top: 30%;
+  left: 33%;
 }
 
 .clickable-area-peroxisomes {
@@ -234,21 +254,21 @@ function finalizarApresentacao() {
   background-color: transparent;
   opacity: 0;
   cursor: pointer;
-  top: 22%;
-  left: 59%;
+  top: 25%;
+  left: 58%;
 }
 
 .clickable-area-lysosomes {
   position: absolute;
-  width: 90px;
-  height: 60px;
-  rotate: -45deg;
+  width: 60px;
+  height: 65px;
+  rotate: 45deg;
   border-radius: 50%;
   background-color: transparent;
   opacity: 0;
   cursor: pointer;
-  top: 43%;
-  left: 26%;
+  top: 44%;
+  left: 29.5%;
 }
 
 .clickable-area-vacuoles {
@@ -259,8 +279,8 @@ function finalizarApresentacao() {
   background-color: transparent;
   opacity: 0;
   cursor: pointer;
-  top: 21%;
-  left: 40%;
+  top: 25%;
+  left: 41%;
 }
 
 .clickable-area-cytoskeleton1 {
@@ -273,7 +293,7 @@ function finalizarApresentacao() {
   opacity: 0;
   cursor: pointer;
   top: 41%;
-  left: 33%;
+  left: 35%;
 }
 
 .clickable-area-cytoskeleton2 {
@@ -286,7 +306,7 @@ function finalizarApresentacao() {
   opacity: 0;
   cursor: pointer;
   top: 45%;
-  left: 32%;
+  left: 34%;
 }
 
 .finalizar-btn {

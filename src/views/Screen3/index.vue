@@ -78,6 +78,13 @@
             mdi-circle
           </v-icon>
         </v-btn>
+        <v-btn icon
+               class="clickable-area-cytoplasmic-membrane"
+               @click="openModal('cytoplasmic_membrane')">
+          <v-icon color="transparent">
+            mdi-circle
+          </v-icon>
+        </v-btn>
       </v-container>
     </v-main>
     <v-btn size="small"
@@ -123,7 +130,7 @@ const organelleData = {
     img: 'src/assets/reticulo_endoplasmatico.jpg',
     content: 'Dentro da célula existe uma rede de túneis onde são fabricadas e transportadas proteínas e lipídios. Essa rede é o retículo endoplasmático. Ele pode ser rugoso, se estiverem cheios de ribossomos, que produzem as proteínas,  ou lisos, quando forem retículos que produzem lipídios.'
   },
-  golgi_apparatus:{
+  golgi_apparatus: {
     title: 'Complexo de Golgi: Centro de distribuição',
     img: 'src/assets/aparelho_de_golgi.jpg',
     content: 'Depois de serem fabricados, as proteínas e lipídios passam pelo complexo de Golgi, que é como um centro de distribuição, onde eles serão modificados, empacotados e enviados para onde são necessários, dentro ou fora da célula. '
@@ -138,7 +145,7 @@ const organelleData = {
     img: 'src/assets/peroxissomo.jpg',
     content: 'São organelas que protegem a célula das substâncias tóxicas. Eles produzem enzimas que quebram os peróxidos, que são compostos que podem ser prejudiciais, e transformam-os em substâncias inofensivas.'
   },
-  lysosomes:{
+  lysosomes: {
     title: 'Lisossomos: Sistema de reciclagem',
     img: 'src/assets/lisossomo_e_fagossomo.jpg',
     content: 'Os lisossomos são como centro de reciclagem celular, pois contêm enzimas que degradam materiais indesejados ou danificados, reciclando os componentes úteis e eliminando aqueles que não servem mais. Isso ajuda a manter a célula limpa e funcionando corretamente. '
@@ -148,7 +155,7 @@ const organelleData = {
     img: 'src/assets/vacuolo.jpg',
     content: 'Nas células animais, os vacúolos não são tão grandes como nas células vegetais, mas apresentam a mesma função, armazenar substâncias, como por exemplo nutrientes para serem usados no momento oportuno.'
   },
-  cytoskeleton:{
+  cytoskeleton: {
     title: 'Citoesqueleto: O esqueleto da célula',
     img: 'src/assets/citoesqueleto.jpg',
     content: 'Célula tem esqueleto? Tem sim! Ele é formado por uma rede de fibras que dá suporte e forma à célula.  Além disso, é o citoesqueleto que permite que a célula se mova, mude de forma e que transporta organelas e vesículas de um local para o outro dentro da célula; Imagine o citoesqueleto como uma rede de trilhos, sobre os quais tudo na célula se move de maneira organizada.'
@@ -307,6 +314,19 @@ function finalizarApresentacao() {
   cursor: pointer;
   top: 45%;
   left: 34%;
+}
+
+.clickable-area-cytoplasmic-membrane {
+  position: absolute;
+  width: 300px;
+  height: 60px;
+  rotate: -190deg;
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 0;
+  cursor: pointer;
+  top: 75%;
+  left: 46%;
 }
 
 .finalizar-btn {

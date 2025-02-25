@@ -6,12 +6,12 @@
       <v-container>
         <v-row class="justify-center text-center">
           <v-col cols="12">
-            <v-img src="src/assets/logo_museu.png" max-width="400"></v-img>
+            <v-img :src="urlLogoMuseu" max-width="400"></v-img>
           </v-col>
         </v-row>
         <v-row>
           <v-col cols="12" md="6" class="d-flex justify-start">
-            <v-img src="src/assets/capi_movimento.gif"
+            <v-img :src="urlCapi"
                    max-width="250"
                    class="rounded-lg"
                    height="200"
@@ -44,6 +44,9 @@ import SobreModal from "@/views/HomePage/components/sobreModal.vue";
 
 const showModal = ref(false);
 const router = useRouter();
+const urlLogoMuseu = new URL('@/assets/logo_museu.png', import.meta.url).href
+const urlCapi = new URL('@/assets/capi_movimento.gif', import.meta.url).href
+
 
 function openModal() {
   showModal.value = true;

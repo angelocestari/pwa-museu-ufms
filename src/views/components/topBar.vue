@@ -3,10 +3,12 @@
     <v-toolbar-title class="text-center w-100">
       Conhecendo as Células Eucariontes
     </v-toolbar-title>
-    <v-img src="src/assets/logo_ufms.svg" max-width="100" class="mr-4"></v-img>
+    <v-img :src="url" max-width="100" class="mr-4"></v-img>
   </v-app-bar>
 </template>
 
 <script setup>
+
+const url = new URL('@/assets/logo_ufms.svg', import.meta.url).href
 
 </script>

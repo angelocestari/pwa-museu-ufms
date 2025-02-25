@@ -3,7 +3,7 @@
     <top-bar></top-bar>
     <v-main class="d-flex align-center justify-center">
       <v-container class="d-flex align-center justify-center">
-        <v-img src="src/assets/celula_eucarionte.jpg"
+        <v-img src="src/assets/celula_eucarionte_atualizada.jpg"
                max-width="80%"
                max-height="80vh"
                contain
@@ -25,6 +25,34 @@
         <v-btn icon
                class="clickable-area-mitochondrias2"
                @click="openModal('mitochondrias')">
+          <v-icon color="transparent">
+            mdi-circle
+          </v-icon>
+        </v-btn>
+        <v-btn icon
+               class="clickable-area-ribosomes1"
+               @click="openModal('ribosomes')">
+          <v-icon color="transparent">
+            mdi-circle
+          </v-icon>
+        </v-btn>
+        <v-btn icon
+               class="clickable-area-ribosomes2"
+               @click="openModal('ribosomes')">
+          <v-icon color="transparent">
+            mdi-circle
+          </v-icon>
+        </v-btn>
+        <v-btn icon
+               class="clickable-area-endoplasmic_reticulum1"
+               @click="openModal('endoplasmic_reticulum')">
+          <v-icon color="transparent">
+            mdi-circle
+          </v-icon>
+        </v-btn>
+        <v-btn icon
+               class="clickable-area-endoplasmic_reticulum2"
+               @click="openModal('endoplasmic_reticulum')">
           <v-icon color="transparent">
             mdi-circle
           </v-icon>
@@ -79,7 +107,35 @@
           </v-icon>
         </v-btn>
         <v-btn icon
-               class="clickable-area-cytoplasmic-membrane"
+               class="clickable-area-cytoskeleton3"
+               @click="openModal('cytoskeleton')">
+          <v-icon color="transparent">
+            mdi-circle
+          </v-icon>
+        </v-btn>
+        <v-btn icon
+               class="clickable-area-cytoskeleton4"
+               @click="openModal('cytoskeleton')">
+          <v-icon color="transparent">
+            mdi-circle
+          </v-icon>
+        </v-btn>
+        <v-btn icon
+               class="clickable-area-cytoskeleton5"
+               @click="openModal('cytoskeleton')">
+          <v-icon color="transparent">
+            mdi-circle
+          </v-icon>
+        </v-btn>
+        <v-btn icon
+               class="clickable-area-cytoplasmic-membrane1"
+               @click="openModal('cytoplasmic_membrane')">
+          <v-icon color="transparent">
+            mdi-circle
+          </v-icon>
+        </v-btn>
+        <v-btn icon
+               class="clickable-area-cytoplasmic-membrane2"
                @click="openModal('cytoplasmic_membrane')">
           <v-icon color="transparent">
             mdi-circle
@@ -196,8 +252,8 @@ function finalizarApresentacao() {
   width: 210px;
   height: 170px;
   border-radius: 50%;
-  background-color: transparent;
-  opacity: 0;
+  background-color: red;
+  opacity: 1;
   cursor: pointer;
   top: 25%;
   left: 44%;
@@ -205,15 +261,15 @@ function finalizarApresentacao() {
 
 .clickable-area-mitochondrias1 {
   position: absolute;
-  width: 120px;
-  height: 50px;
+  width: 80px;
+  height: 35px;
   rotate: -60deg;
   border-radius: 50%;
-  background-color: transparent;
-  opacity: 0;
+  background-color: red;
+  opacity: 1;
   cursor: pointer;
-  top: 56%;
-  left: 59%;
+  top: 57%;
+  left: 60.5%;
 }
 
 .clickable-area-mitochondrias2 {
@@ -222,11 +278,62 @@ function finalizarApresentacao() {
   height: 80px;
   rotate: -130deg;
   border-radius: 50%;
-  background-color: transparent;
-  opacity: 0;
+  background-color: red;
+  opacity: 1;
   cursor: pointer;
   top: 54%;
   left: 33%;
+}
+
+.clickable-area-ribosomes1{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  rotate: -130deg;
+  border-radius: 50%;
+  background-color: red;
+  opacity: 1;
+  cursor: pointer;
+  top: 42%;
+  left: 35.5%;
+}
+
+.clickable-area-ribosomes2{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  rotate: -130deg;
+  border-radius: 50%;
+  background-color: red;
+  opacity: 1;
+  cursor: pointer;
+  top: 46%;
+  left: 36%;
+}
+
+.clickable-area-endoplasmic_reticulum1{
+  position: absolute;
+  width: 250px;
+  height: 140px;
+  border-radius: 50%;
+  background-color: red;
+  opacity: 1;
+  cursor: pointer;
+  top: 49%;
+  left: 42%;
+}
+
+.clickable-area-endoplasmic_reticulum2{
+  position: absolute;
+  width: 100px;
+  height: 70px;
+  rotate: -80deg;
+  border-radius: 50%;
+  background-color: red;
+  opacity: 1;
+  cursor: pointer;
+  top: 40%;
+  left: 38.5%;
 }
 
 .clickable-area-golgi_apparatus {
@@ -234,8 +341,8 @@ function finalizarApresentacao() {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: transparent;
-  opacity: 0;
+  background-color: red;
+  opacity: 1;
   cursor: pointer;
   top: 31%;
   left: 62%;
@@ -246,8 +353,8 @@ function finalizarApresentacao() {
   width: 70px;
   height: 60px;
   border-radius: 50%;
-  background-color: transparent;
-  opacity: 0;
+  background-color: red;
+  opacity: 1;
   cursor: pointer;
   top: 30%;
   left: 33%;
@@ -258,8 +365,8 @@ function finalizarApresentacao() {
   width: 45px;
   height: 40px;
   border-radius: 50%;
-  background-color: transparent;
-  opacity: 0;
+  background-color: red;
+  opacity: 1;
   cursor: pointer;
   top: 25%;
   left: 58%;
@@ -271,8 +378,8 @@ function finalizarApresentacao() {
   height: 65px;
   rotate: 45deg;
   border-radius: 50%;
-  background-color: transparent;
-  opacity: 0;
+  background-color: red;
+  opacity: 1;
   cursor: pointer;
   top: 44%;
   left: 29.5%;
@@ -283,8 +390,8 @@ function finalizarApresentacao() {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: transparent;
-  opacity: 0;
+  background-color: red;
+  opacity: 1;
   cursor: pointer;
   top: 25%;
   left: 41%;
@@ -292,41 +399,93 @@ function finalizarApresentacao() {
 
 .clickable-area-cytoskeleton1 {
   position: absolute;
-  width: 105px;
+  width: 110px;
   height: 10px;
-  rotate: -56deg;
+  rotate: -35deg;
   border-radius: 50%;
-  background-color: transparent;
-  opacity: 0;
+  background-color: red;
+  opacity: 1;
   cursor: pointer;
-  top: 41%;
-  left: 35%;
+  top: 34%;
+  left: 36%;
 }
 
 .clickable-area-cytoskeleton2 {
   position: absolute;
   width: 120px;
   height: 10px;
-  rotate: -93deg;
+  rotate: -75deg;
   border-radius: 50%;
-  background-color: transparent;
-  opacity: 0;
+  background-color: red;
+  opacity: 1;
   cursor: pointer;
-  top: 45%;
-  left: 34%;
+  top: 37%;
+  left: 35%;
 }
 
-.clickable-area-cytoplasmic-membrane {
+.clickable-area-cytoskeleton3{
+  position: absolute;
+  width: 130px;
+  height: 10px;
+  rotate: -65deg;
+  border-radius: 50%;
+  background-color: red;
+  opacity: 1;
+  cursor: pointer;
+  top: 41%;
+  left: 23.5%;
+}
+
+.clickable-area-cytoskeleton4{
+  position: absolute;
+  width: 140px;
+  height: 10px;
+  rotate: 48deg;
+  border-radius: 50%;
+  background-color: red;
+  opacity: 1;
+  cursor: pointer;
+  top: 58%;
+  left: 25%;
+}
+
+.clickable-area-cytoskeleton5{
+  position: absolute;
+  width: 60px;
+  height: 10px;
+  rotate: -45deg;
+  border-radius: 50%;
+  background-color: red;
+  opacity: 1;
+  cursor: pointer;
+  top: 68%;
+  left: 58%;
+}
+
+.clickable-area-cytoplasmic-membrane1 {
   position: absolute;
   width: 300px;
   height: 60px;
   rotate: -190deg;
   border-radius: 50%;
-  background-color: transparent;
-  opacity: 0;
+  background-color: red;
+  opacity: 1;
   cursor: pointer;
   top: 75%;
   left: 46%;
+}
+
+.clickable-area-cytoplasmic-membrane2 {
+  position: absolute;
+  width: 150px;
+  height: 35px;
+  rotate: 145deg;
+  border-radius: 50%;
+  background-color: red;
+  opacity: 1;
+  cursor: pointer;
+  top: 66%;
+  left: 65%;
 }
 
 .finalizar-btn {

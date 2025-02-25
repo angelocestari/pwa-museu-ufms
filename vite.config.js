@@ -6,6 +6,10 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import vuetify from "vite-plugin-vuetify";
 
 export default defineConfig({
+    base: '/celula-eucarionte-interativa/',
+    server: {
+      https: true
+    },
     plugins: [
         vue(),
         vueDevTools(),
@@ -24,19 +28,19 @@ export default defineConfig({
                 display: 'standalone',
                 icons: [
                     {
-                        src: '/icon-192x192.png',
+                        src: '/celula-eucarionte-interativa/icon-192x192.png',
                         sizes: '192x192',
                         type: 'image/png',
                     },
                     {
-                        src: '/icon-512x512.png',
+                        src: '/celula-eucarionte-interativa/icon-512x512.png',
                         sizes: '512x512',
                         type: 'image/png',
                     }
                 ],
                 screenshots: [
                     {
-                        src: '/homepage.png',
+                        src: '/celula-eucarionte-interativa/homepage.png',
                         sizes: '2880x1704',
                         type: 'image/png'
                     }

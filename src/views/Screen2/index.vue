@@ -30,7 +30,7 @@
           <v-col cols="12"
                  md="6"
                  class="d-flex justify-center">
-            <v-img src="src/assets/celula_eucarionte.jpg" max-width="700" contain></v-img>
+            <v-img :src="urlCelula" max-width="700" contain></v-img>
           </v-col>
         </v-row>
       </v-container>
@@ -43,6 +43,7 @@ import TopBar from "@/views/components/topBar.vue";
 import {useRouter} from "vue-router";
 
 const router = useRouter();
+const urlCelula = new URL('@/assets/celula_eucarionte_atualizada.jpg', import.meta.url).href
 
 function goToScreen3() {
   router.push("/screen3");

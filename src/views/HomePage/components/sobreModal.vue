@@ -10,10 +10,10 @@
       </v-card-text>
       <v-row>
         <v-col cols="6">
-          <v-img src="src/assets/logo_facom.svg" max-height="100"></v-img>
+          <v-img :src="urlLogofacom" max-height="100"></v-img>
         </v-col>
         <v-col cols="6">
-          <v-img src="src/assets/logo_ufms.svg" max-height="100"></v-img>
+          <v-img :src="urlLogoUfms" max-height="100"></v-img>
         </v-col>
       </v-row>
       <v-card-actions>
@@ -33,6 +33,10 @@ import {computed, defineProps, defineEmits} from "vue";
 const props = defineProps({
   modelValue: Boolean,
 });
+
+const urlLogoUfms = new URL('@/assets/logo_ufms.svg', import.meta.url).href
+const urlLogofacom = new URL('@/assets/logo_facom.svg', import.meta.url).href
+
 
 const emit = defineEmits(["update:modelValue"]);
 

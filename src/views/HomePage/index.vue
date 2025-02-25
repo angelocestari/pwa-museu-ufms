@@ -6,16 +6,15 @@
       <v-container>
         <v-row class="justify-center text-center">
           <v-col cols="12">
-            <v-img src="src/assets/logo_museu.png" max-width="400"></v-img>
+            <v-img :src="urlLogoMuseu" max-width="400"></v-img>
           </v-col>
         </v-row>
         <v-row>
-          <v-col cols="12" md="6" class="d-flex justify-start">
-            <v-img src="src/assets/capi_movimento.gif"
-                   max-width="250"
-                   class="rounded-lg"
-                   height="200"
-                   alt="animacao"
+          <v-col cols="12">
+            <v-img :src="urlCapi"
+                   class="capi-andando"
+                   height="150"
+                   alt="Capivara andando"
             ></v-img>
           </v-col>
         </v-row>
@@ -44,6 +43,9 @@ import SobreModal from "@/views/HomePage/components/sobreModal.vue";
 
 const showModal = ref(false);
 const router = useRouter();
+const urlLogoMuseu = new URL('@/assets/logo_museu.png', import.meta.url).href
+const urlCapi = new URL('@/assets/capi_movimento.gif', import.meta.url).href
+
 
 function openModal() {
   showModal.value = true;
@@ -64,6 +66,23 @@ function goToTela2() {
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 8px;
+  }
+
+  .capi-andando{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100px;
+    animation: moveCapi 8s linear infinite;
+  }
+
+  @keyframes moveCapi {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
   }
 
 </style>

@@ -24,19 +24,19 @@ export default defineConfig({
                 display: 'standalone',
                 icons: [
                     {
-                        src: '../public/icon-192x192.png',
+                        src: new URL('@/public/icon-192x192.png', import.meta.url).href,
                         sizes: '192x192',
                         type: 'image/png',
                     },
                     {
-                        src: '../public/icon-512x512.png',
+                        src: new URL('@/public/icon-512x512.png', import.meta.url).href,
                         sizes: '512x512',
                         type: 'image/png',
                     }
                 ],
                 screenshots: [
                     {
-                        src: '../public/homepage.png',
+                        src: new URL('@/public/homepage.png', import.meta.url).href,
                         sizes: '2880x1704',
                         type: 'image/png'
                     }

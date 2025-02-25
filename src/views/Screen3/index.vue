@@ -252,8 +252,8 @@ function finalizarApresentacao() {
   width: 210px;
   height: 170px;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 25%;
   left: 44%;
@@ -265,8 +265,8 @@ function finalizarApresentacao() {
   height: 35px;
   rotate: -60deg;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 57%;
   left: 60.5%;
@@ -278,8 +278,8 @@ function finalizarApresentacao() {
   height: 80px;
   rotate: -130deg;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 54%;
   left: 33%;
@@ -291,8 +291,8 @@ function finalizarApresentacao() {
   height: 25px;
   rotate: -130deg;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 42%;
   left: 35.5%;
@@ -304,8 +304,8 @@ function finalizarApresentacao() {
   height: 25px;
   rotate: -130deg;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 46%;
   left: 36%;
@@ -316,8 +316,8 @@ function finalizarApresentacao() {
   width: 250px;
   height: 140px;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 49%;
   left: 42%;
@@ -329,8 +329,8 @@ function finalizarApresentacao() {
   height: 70px;
   rotate: -80deg;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 40%;
   left: 38.5%;
@@ -341,8 +341,8 @@ function finalizarApresentacao() {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 31%;
   left: 62%;
@@ -353,8 +353,8 @@ function finalizarApresentacao() {
   width: 70px;
   height: 60px;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 30%;
   left: 33%;
@@ -365,8 +365,8 @@ function finalizarApresentacao() {
   width: 45px;
   height: 40px;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 25%;
   left: 58%;
@@ -378,8 +378,8 @@ function finalizarApresentacao() {
   height: 65px;
   rotate: 45deg;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 44%;
   left: 29.5%;
@@ -390,8 +390,8 @@ function finalizarApresentacao() {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 25%;
   left: 41%;
@@ -403,8 +403,8 @@ function finalizarApresentacao() {
   height: 10px;
   rotate: -35deg;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 34%;
   left: 36%;
@@ -416,8 +416,8 @@ function finalizarApresentacao() {
   height: 10px;
   rotate: -75deg;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 37%;
   left: 35%;
@@ -429,8 +429,8 @@ function finalizarApresentacao() {
   height: 10px;
   rotate: -65deg;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 41%;
   left: 23.5%;
@@ -442,8 +442,8 @@ function finalizarApresentacao() {
   height: 10px;
   rotate: 48deg;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 58%;
   left: 25%;
@@ -455,8 +455,8 @@ function finalizarApresentacao() {
   height: 10px;
   rotate: -45deg;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 68%;
   left: 58%;
@@ -468,8 +468,8 @@ function finalizarApresentacao() {
   height: 60px;
   rotate: -190deg;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 75%;
   left: 46%;
@@ -481,8 +481,8 @@ function finalizarApresentacao() {
   height: 35px;
   rotate: 145deg;
   border-radius: 50%;
-  background-color: red;
-  opacity: 1;
+  background-color: transparent;
+  opacity: 0;
   cursor: pointer;
   top: 66%;
   left: 65%;
@@ -493,4 +493,251 @@ function finalizarApresentacao() {
   bottom: 20px;
   right: 20px;
 }
+
+@media (max-width: 1334px) {
+
+  .clickable-area-nucleus{
+    position: absolute;
+    width: 190px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 22%;
+    left: 44%;
+  }
+
+  .clickable-area-mitochondrias1 {
+    position: absolute;
+    width: 100px;
+    height: 35px;
+    rotate: -55deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 57%;
+    left: 60.5%;
+  }
+
+  .clickable-area-mitochondrias2 {
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    rotate: -140deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 56%;
+    left: 33%;
+  }
+
+  .clickable-area-ribosomes1{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    rotate: -130deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 41%;
+    left: 34%;
+  }
+
+  .clickable-area-ribosomes2{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    rotate: -130deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 46%;
+    left: 35%;
+  }
+
+  .clickable-area-endoplasmic_reticulum1{
+    position: absolute;
+    width: 270px;
+    height: 130px;
+    rotate: -20deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 49%;
+    left: 42%;
+  }
+
+  .clickable-area-endoplasmic_reticulum2{
+    position: absolute;
+    width: 100px;
+    height: 65px;
+    rotate: -80deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 40%;
+    left: 38%;
+  }
+
+  .clickable-area-golgi_apparatus {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 30%;
+    left: 63%;
+  }
+
+  .clickable-area-centrioles {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 28%;
+    left: 33%;
+  }
+
+  .clickable-area-peroxisomes {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 22%;
+    left: 59%;
+  }
+
+  .clickable-area-lysosomes {
+    position: absolute;
+    width: 60px;
+    height: 50px;
+    rotate: -30deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 44%;
+    left: 28%;
+  }
+
+  .clickable-area-vacuoles {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 22%;
+    left: 40.5%;
+  }
+
+  .clickable-area-cytoskeleton1 {
+    position: absolute;
+    width: 110px;
+    height: 10px;
+    rotate: -35deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 30%;
+    left: 36%;
+  }
+
+  .clickable-area-cytoskeleton2 {
+    position: absolute;
+    width: 120px;
+    height: 10px;
+    rotate: -75deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 37%;
+    left: 34%;
+  }
+
+  .clickable-area-cytoskeleton3{
+    position: absolute;
+    width: 130px;
+    height: 10px;
+    rotate: -60deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 39%;
+    left: 22%;
+  }
+
+  .clickable-area-cytoskeleton4{
+    position: absolute;
+    width: 140px;
+    height: 10px;
+    rotate: 48deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 61%;
+    left: 24.5%;
+  }
+
+  .clickable-area-cytoskeleton5{
+    position: absolute;
+    width: 60px;
+    height: 10px;
+    rotate: -45deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 71%;
+    left: 59%;
+  }
+
+  .clickable-area-cytoplasmic-membrane1 {
+    position: absolute;
+    width: 300px;
+    height: 60px;
+    rotate: -190deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 78%;
+    left: 46%;
+  }
+
+  .clickable-area-cytoplasmic-membrane2 {
+    position: absolute;
+    width: 150px;
+    height: 35px;
+    rotate: 140deg;
+    border-radius: 50%;
+    background-color: transparent;
+    opacity: 0;
+    cursor: pointer;
+    top: 70%;
+    left: 65%;
+  }
+
+}
+
 </style>

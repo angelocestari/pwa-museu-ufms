@@ -10,12 +10,11 @@
           </v-col>
         </v-row>
         <v-row>
-          <v-col cols="12" md="6" class="d-flex justify-start">
+          <v-col cols="12">
             <v-img :src="urlCapi"
-                   max-width="250"
-                   class="rounded-lg"
-                   height="200"
-                   alt="animacao"
+                   class="capi-andando"
+                   height="150"
+                   alt="Capivara andando"
             ></v-img>
           </v-col>
         </v-row>
@@ -67,6 +66,23 @@ function goToTela2() {
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 8px;
+  }
+
+  .capi-andando{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100px;
+    animation: moveCapi 8s linear infinite;
+  }
+
+  @keyframes moveCapi {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100vw);
+    }
   }
 
 </style>

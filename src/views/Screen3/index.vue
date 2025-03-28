@@ -175,7 +175,7 @@ const organelleData = {
   mitochondrias: {
     title: 'Mitocôndrias: As usinas de energia',
     img: new URL('@/assets/mitocondria.jpg', import.meta.url).href,
-    content: 'As mitocôndrias produzem a energia que a célula precisa para realizar suas atividades. Curiosamente, as mitocôndrias têm seu próprio DNA, o que nos faz pensar que, há muito tempo, elas podem ter sido células independentes que passaram a viver dentro das células eucariontes. \n' +
+    content: 'As mitocôndrias produzem a energia que a célula precisa para realizar suas atividades. Para tanto, o corpo precisa se nutrir e direcionar esses nutrientes para dentro das células onde as mitocôndrias possam converter os macronutrientes em energia.Curiosamente, as mitocôndrias têm seu próprio DNA, o que nos faz pensar que, há muito tempo, elas podem ter sido células independentes que passaram a viver dentro das células eucariontes. \n' +
         'Na realidade, Cientistas acreditam que as mitocôndrias, assim como os cloroplastos (nas células vegetais) eram bactérias que, há bilhões de anos, começaram a viver dentro de outras células. Essa parceria evoluiu e deu origem às células Eucariontes. Essa teoria é chamada de teoria Endossimbiose.\n'
   },
   ribosomes: {

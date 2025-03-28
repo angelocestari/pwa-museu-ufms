@@ -14,7 +14,7 @@
                alt="Imagem"
         ></v-img>
       </div>
-      <v-card-text class="text-justify text-body-1">
+      <v-card-text class="text-justify text-body-2">
         {{ content }}
       </v-card-text>
       <v-card-actions class="justify-center">

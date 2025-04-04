@@ -9,16 +9,16 @@
       <div class="d-flex justify-center my-3">
         <v-img :src="imgPath"
                class="rounded-img"
-               max-width="400"
+               max-width="300"
                contain
                alt="Imagem"
         ></v-img>
       </div>
-      <v-card-text class="text-justify text-body-1">
+      <v-card-text class="text-justify text-body-2">
         {{ content }}
       </v-card-text>
       <v-card-actions class="justify-center">
-        <v-btn color="red"
+        <v-btn color="#0088B7"
                variant="elevated"
                class="text-body-1 font-weight-bold rounded-lg px-4 py-2"
                @click="closeModal"

@@ -8,7 +8,7 @@ import vuetify from "vite-plugin-vuetify";
 export default defineConfig({
     base: '/celula-eucarionte-interativa/',
     server: {
-      https: false
+      https: true
     },
     plugins: [
         vue(),

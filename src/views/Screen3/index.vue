@@ -2,6 +2,9 @@
   <v-app>
     <top-bar></top-bar>
     <v-main class="d-flex align-center justify-center">
+      <div class="cell-up-text">
+       <h2>Clique sobre a organela a qual deseja conhecer um pouco mais!</h2>
+      </div>
       <v-container class="d-flex align-center justify-center">
         <v-img :src="urlCelula"
                max-width="80%"
@@ -248,6 +251,18 @@ function finalizarApresentacao() {
 </script>
 
 <style scoped>
+
+.cell-up-text{
+  position: absolute;
+  width: 100%;
+  top: 10%;
+  left: 25%;
+}
+
+h2{
+  color: green;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+}
 
 .clickable-area-nucleus {
   position: absolute;

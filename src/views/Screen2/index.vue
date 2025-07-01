@@ -5,19 +5,21 @@
       <v-container class="mt-n4">
         <v-row class="align-center">
           <v-col cols="12" md="6">
-            <v-card class="pa-6 text-center elevation-3" max-width="500px">
-              <v-card-title class="text-h4 font-weight-bold">A Fábrica da Vida</v-card-title>
-              <v-card-subtitle class="text-h6 mt-3">Você é feito de ... Células!!!</v-card-subtitle>
-              <v-card-text class="text-body-1 mt-4">
-                Já imaginou que o nosso corpo é como uma cidade cheia de “mini fábricas” trabalhando juntas? Cada uma
-                dessas fábricas é uma célula! As células eucariontes são as unidades básicas da vida, presentes em todos
-                os seres vivos complexos, como plantas, animais e fungos. Diferentes das células procariontes, as
-                eucariontes têm o núcleo bem definido, onde fica o DNA, que é como o manual de instruções das células.
-                As células são organizadas e têm várias partes especializadas que trabalham em harmonia para manter a
-                vida.
+            <v-card class="pa-6 text-center elevation-3" max-width="600px">
+              <v-card-title class="text-h6 font-weight-bold">O MUNDO SECRETO DENTRO DE VOCÊ</v-card-title>
+              <v-card-subtitle class="text-h6">Você é feito de ... células!!!</v-card-subtitle>
+              <v-card-text class="text-body-1">
+                Já parou para pensar que o nosso corpo é tipo um monte de cidadezinhas trabalhando em conjunto? Pois é! Cada uma dessas
+                "cidades" é uma célula! As células eucariontes são unidades básicas da vida e estão presentes em todos os seres vivos
+                mais complexos, como plantas, animais e fungos.
                 <br><br>
-                Vamos dar um passeio por dentro de uma célula? Lá, existe um mundo em miniatura, onde várias máquinas
-                chamadas organelas trabalham para manter a vida. Vamos conhecer algumas dessas estruturas fascinantes!
+                Diferente das células procariontes, as eucariontes têm um núcleo bem organizado, onde fica guardado o DNA - que nada mais
+                é do que o manual de instruções da célula. Além disso, elas são super organizadas e têm várias partes especializadas, cada
+                uma com uma função importante, todas trabalhando em sintonia para manter tudo funcionando direitinho.
+                <br><br>
+                Que tal a gente dar um tour dentro de uma célula? Lá dentro rola um verdadeiro mundo em minuatura! São vários "departamentos",
+                chamados de organelas, cada um com sua missão para garantir que a célula continue viva e saudável. Bora conhecer algumas
+                dessas estruturas incríveis?
               </v-card-text>
               <v-btn color="green"
                      variant="outlined"
@@ -43,7 +45,7 @@ import TopBar from "@/views/components/topBar.vue";
 import {useRouter} from "vue-router";
 
 const router = useRouter();
-const urlCelula = new URL('@/assets/celula_eucarionte_atualizada.jpg', import.meta.url).href
+const urlCelula = new URL('@/assets/Célula inicial.jpg', import.meta.url).href
 
 function goToScreen3() {
   router.push("/screen3");

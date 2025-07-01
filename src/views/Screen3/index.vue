@@ -126,7 +126,7 @@ const organelleData = {
   endoplasmic_reticulum: {
     title: 'Retículo endoplasmático',
     img:  new URL('@/assets/reticulo_endoplasmatico.jpeg', import.meta.url).href,
-    content: 'Dentro da célula existe uma rede de túneis onde são fabricadas e transportadas proteínas e lipídios. Essa rede é o retículo endoplasmático. Ele pode ser rugoso, se estiverem cheios de ribossomos, que produzem as proteínas,  ou lisos, quando forem retículos que produzem lipídios.'
+    content: 'Sua estrutura de membranas interligadas permite o transporte de substâncias dentro da célula, funcionando como uma espécie de "rede logística" interna. Assim, o RE contribui diretamente para a manutenção e organização das atividades celulares. Ele se divide em duas formas: o retículo endoplasmático rugoso (RER), coberto por ribossomos, que participa da síntese de proteínas; e o retículo endoplasmático liso (REL), que atua na produção de lipídios, na desintoxicação celular e no armazenamento de íons cálcio.'
   },
   golgi_apparatus: {
     title: 'Complexo de Golgi',
